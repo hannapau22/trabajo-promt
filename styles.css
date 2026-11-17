@@ -1,0 +1,44 @@
+/* Importación del motor de Tailwind CSS v3 (CDN JIT) */
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/tailwind.min.css";
+
+/* Configuración de Colores Pastel y Tonos de Lujo */
+:root {
+    --crema: #FDFBF7;
+    --rosa-polvo: #ffc5f1;
+    --lavanda: #EFEBF2;
+    --beige-arena: #EAE4DC;
+    --oro-brillante: #e6cb74;
+    --oro-oscuro: #e2bd77;
+}
+
+/* Clases utilitarias personalizadas vinculadas al motor de diseño */
+.bg-crema { background-color: var(--crema); }
+.text-crema { color: var(--crema); }
+.bg-rosaPolvo { background-color: var(--rosa-polvo); }
+.selection\:bg-rosaPolvo::selection { background-color: var(--rosa-polvo); }
+.bg-lavanda { background-color: var(--lavanda); }
+.bg-beigeArena { background-color: var(--beige-arena); }
+.border-beigeArena { border-color: var(--beige-arena); }
+.bg-oroBrillante { background-color: var(--oro-brillante); }
+.text-oroBrillante { color: var(--oro-brillante); }
+.border-oroBrillante { border-color: var(--oro-brillante); }
+.hover\:bg-oroBrillante:hover { background-color: var(--oro-brillante); }
+.hover\:border-oroBrillante:hover { border-color: var(--oro-brillante); }
+.hover\:text-oroBrillante:hover { color: var(--oro-brillante); }
+.bg-oroOscuro { background-color: var(--oro-oscuro); }
+.text-oroOscuro { color: var(--oro-oscuro); }
+.hover\:bg-oroOscuro:hover { background-color: var(--oro-oscuro); }
+
+/* Tipografía global personalizada */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Transiciones suaves generales */
+button, a {
+    transition: all 0.3s ease;
+}
